@@ -93,7 +93,7 @@ dlg.controlsGroup.btnOk.onClick = function() {
     var doc = app.documents.add (new UnitValue(width, 'px'), new UnitValue(height, 'px'), 72, 'font-texture', NewDocumentMode.RGB, DocumentFill.WHITE, 1, BitsPerChannelType.EIGHT, undefined);
     
     // Building text layers
-    var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var chars = ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_\'abcdefghijklmnopqrstuvwxyz{|}~';
     var rowColumnCount = Math.ceil(Math.sqrt(chars.length));
     var cellWidth = Math.floor(width / rowColumnCount);
     var cellHeight = Math.floor(height / rowColumnCount);
